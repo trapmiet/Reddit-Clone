@@ -1,0 +1,59 @@
+.profile123 {
+  margin-left: 160px;
+  width: 500px;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 100px;
+  align-items: center;
+}
+.pro-over{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#avatar-profile{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10000px;
+  border: 1px black solid;
+}
+.ayo{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+
+}
+#name, #email,#Time{
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+#avatar-profile{
+  margin-left: 20px;
+}
+.projectkd{
+  font-weight: 700;
+  font-size: 20px;
+  color: #b7cad4;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+.ayo img{
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+}
+.ayo123{
+  display: flex;
+  align-items: center;
+
+}

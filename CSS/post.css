@@ -1,0 +1,21 @@
+.create-post-container {
+  margin-top: 100px;
+  margin-left: 360px;
+}
+.hetcuu {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #b7cad4;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+#title {
+  width: 720px;
+  height: 60px;
+  border-radius: 20px;
+  margin-top: 20px;
+  border: 0.4px solid rgba(255, 255, 255, 0.2);
+}
+#title input::placeholder {
+  margin-left: 20px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <link rel="stylesheet" href="/CSS/login.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="header-left">
+          <a href="/HTML/home.html">
+            <img
+              src="/Header Img/image-removebg-preview (41).png "
+              alt="logo"
+            />
+            <h3 class="hello">Reddit</h3>
+          </a>
+        </div>
+
+        <div class="header-right btnlogin">
+          <a href="/HTML/register.html"
+            ><button class="button-29" role="button">Sign Up</button></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="screen">
+        <div class="screen__content">
+          <form class="login">
+            <div class="login__field">
+              <i class="login__icon fas fa-user"></i>
+              <input
+                type="text"
+                class="login__input"
+                placeholder="User name / Email"
+              />
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input
+                type="password"
+                class="login__input"
+                placeholder="Password"
+              />
+            </div>
+            <button class="button login__submit">
+              <span class="button__text">Log In Now</span>
+              <i class="button__icon fas fa-chevron-right"></i>
+            </button>
+          </form>
+          <div class="social-login">
+            <h3>log in via</h3>
+            <div class="social-icons">
+              <a href="#" class="social-login__icon fab fa-instagram"></a>
+              <a href="#" class="social-login__icon fab fa-facebook"></a>
+              <a href="#" class="social-login__icon fab fa-twitter"></a>
+            </div>
+          </div>
+        </div>
+        <div class="screen__background">
+          <span
+            class="screen__background__shape screen__background__shape4"
+          ></span>
+          <span
+            class="screen__background__shape screen__background__shape3"
+          ></span>
+          <span
+            class="screen__background__shape screen__background__shape2"
+          ></span>
+          <span
+            class="screen__background__shape screen__background__shape1"
+          ></span>
+        </div>
+      </div>
+      <div class="caigido">
+        <button id="google">
+          <img src="/Header Img/image-removebg-preview (2).png" alt="" />
+        </button>
+        <button id="facebook">
+          <img src="/Header Img/image-removebg-preview (3).png" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"
+    ></script>
+    <script defer src="/JS/conflict.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/JS/login.js"></script>
+    <script src="/JS/loginprovider.js"></script>
+  </body>
+</html>
