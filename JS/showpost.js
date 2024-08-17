@@ -37,9 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Clear previous content in the container
     container.innerHTML = "";
+    var showPost = posts.sort(
+      (a, b) => new Date(b.timestamp) - new Date(a.timestamp)
+    );
 
     // Loop through each post and create HTML elements
-    posts.forEach((post) => {
+    showPost.forEach((post) => {
       let postTime = new Date(post.timestamp);
       let timeAgo = formatTimeAgo(postTime);
 
@@ -63,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
               </div>
               <button class="dislike-btn"><img src="/Body Img/image-removebg-preview (42).png" alt="" class="ez haha"></button>
             </div>
-            <div class="huhu">
+            <div class="huhuhu">
               <span class="comment-count">0</span>
               <img src="/Body Img/image-removebg-preview (43).png" alt="" class="lululu">
             </div>
@@ -81,30 +84,34 @@ document.addEventListener("DOMContentLoaded", function () {
       container.appendChild(div);
 
       // Event listeners for like and dislike buttons within the current post
-      div.querySelector('.like-btn').addEventListener('click', function() {
-        let likeCount = parseInt(div.querySelector('.like-count').innerText);
+      div.querySelector(".like-btn").addEventListener("click", function () {
+        let likeCount = parseInt(div.querySelector(".like-count").innerText);
         let randomIncrement = Math.floor(Math.random() * 5) + 1; // Random increment between 1 to 5
         likeCount += randomIncrement;
-        div.querySelector('.like-count').innerText = likeCount;
+        div.querySelector(".like-count").innerText = likeCount;
         updateCounts();
       });
 
-      div.querySelector('.dislike-btn').addEventListener('click', function() {
-        let dislikeCount = parseInt(div.querySelector('.dislike-count').innerText);
+      div.querySelector(".dislike-btn").addEventListener("click", function () {
+        let dislikeCount = parseInt(
+          div.querySelector(".dislike-count").innerText
+        );
         let randomIncrement = Math.floor(Math.random() * 3) + 1; // Random increment between 1 to 3
         dislikeCount += randomIncrement;
-        div.querySelector('.dislike-count').innerText = dislikeCount;
+        div.querySelector(".dislike-count").innerText = dislikeCount;
         updateCounts();
       });
 
       // Update counts function inside the current post
       function updateCounts() {
-        let likeCount = parseInt(div.querySelector('.like-count').innerText);
-        let dislikeCount = parseInt(div.querySelector('.dislike-count').innerText);
+        let likeCount = parseInt(div.querySelector(".like-count").innerText);
+        let dislikeCount = parseInt(
+          div.querySelector(".dislike-count").innerText
+        );
 
         let netLikes = likeCount - dislikeCount;
         netLikes = Math.max(netLikes, 0); // Ensure netLikes is not negative
-        div.querySelector('.net-likes').innerText = netLikes;
+        div.querySelector(".net-likes").innerText = netLikes;
       }
     });
   }

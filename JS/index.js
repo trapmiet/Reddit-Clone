@@ -93,4 +93,3 @@ document.addEventListener("submit", function (e) {
     displayPosts(); // After adding new post, display all posts including the new one
   }
 });
-

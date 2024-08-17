@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reddit</title>
+    <link rel="stylesheet" href="/CSS/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -13,84 +14,167 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
     <link rel="stylesheet" href="/CSS/post.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1384/1384067.png" type="image/x-icon">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link rel="icon" href="/Body Img/image-removebg-preview (65).png" type="image/png">
   </head>
   <body>
 
 
     <header>
 
-      <div class="header">
-
-        <div class="header-left">
-          <a href="/HTML/home.html" class="thuaroi">
-            <img src="/Header Img/image-removebg-preview (41).png " alt="logo">
-            <p>Reddit</p>
-          </a>
-        </div>
-
-        <div class="header-mid">
-          <input type="text" class="input" placeholder="Search Reddit">
-          <img src="/Header Img/image-removebg-preview (8).png" alt="">
-        </div>
-
-        <div class="header-right btnlogin">
-          <!-- <a href="/login.html"><button class="button-29" role="button">Log in</button>
-          </a>
-          <div class="profile">
-            <div>
-              <p class="profile-name"></p>
-              <button class="button-24 btnlogout" role="button">Log Out</button>
-            </div>
-          </div> -->
-          <a href="#">
-            <img src="/Header Img/image-removebg-preview (44).png" alt="" class="huhu">
-          </a>
-
-            <a href="post.html" class="wassup">
-            <img src="/Header Img/image-removebg-preview (5).png" alt="">
-            <p>Create Post</p>
+      <header>
+        <div class="header navbar">
+          <div class="header-left">
+            <a href="/HTML/home.html" class="thuaroi">
+              <img
+                src="/Header Img/image-removebg-preview (41).png "
+                alt="logo"
+              />
+              <p>Reddit</p>
             </a>
-
-          <a href="#">
-            <img src="/Header Img/image-removebg-preview (4).png" alt="">
-          </a>
-
-          <a href="#">
-            <img src="/Header Img/image-removebg-preview (11).png" alt="">
-          </a>
-
+          </div>
+  
+          <div class="header-mid">
+            <input type="text" class="input" placeholder="Search Reddit" />
+            <img src="/Header Img/image-removebg-preview (8).png" alt="" />
+          </div>
+  
+          <div class="header-right btnlogin">
+            <a href="#">
+              <img
+                src="/Body Img/image-removebg-preview (62).png"
+                alt=""
+                class="huhu"
+              />
+            </a>
+  
+            <a href="post.html" class="wassup">
+  
+              <button class="bookmarkBtn">
+                <span class="IconContainer">
+  <img src="/Body Img/image-removebg-preview (47).png" alt=""></path>
+                  </svg>
+                </span>
+                <p class="text">Post</p>
+              </button>
+              
+            </a>
+  
+            <a href="#">
+              <img src="/Body Img/image-removebg-preview (60).png" alt="" />
+            </a>
+  
+            <a href="#">
+              <img src="/Body Img/image-removebg-preview (61).png" alt="" />
+            </a>
+            <div class="hello123">
+              <a href="/HTML/login.html" id="login-btn-container">
+  
+  <div>
+      <button class="btn123 log-in" role="button"><i class="animation"></i>Log In<i class="animation"></i>
+      </button>
+  </div>
+              </a>
+              <div
+                class="dropdown profile"
+                id="profile-dropdown"
+                style="display: none"
+              >
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="/Body Img/image-removebg-preview (63).png" alt="" />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                    <a class="dropdown-item" href="/HTML/profile.html">Account</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item logout" href="#">Sign Out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-
-      </div>
-
-    </header>
+      </header>
     <div class="ngancach"></div>
 
 
 
-    <n>
+
     <div class="vcl">
       <div class="scroll-container">
         <div class="section1">
-          <div class="home"><img src="/Body Img/image-removebg-preview (35).png" alt=""><span>Home</span></div>
-          <div class="popular"><img src="/Body Img/image-removebg-preview (38).png" alt=""><span>Popular</span></div>
-          <div class="all"><img src="/Body Img/image-removebg-preview (39).png" alt=""><span>All</span></div>
+          <div class="home">
+            <img
+              src="/Body Img/image-removebg-preview (56).png"
+              alt=""
+            /><span>Home</span>
+          </div>
+          <div class="popular">
+            <img
+              src="/Body Img/image-removebg-preview (38).png"
+              alt=""
+            /><span>Popular</span>
+          </div>
+          <div class="all">
+            <img
+              src="/Body Img/image-removebg-preview (64).png"
+              alt=""
+            /><span>All</span>
+          </div>
         </div>
 
         <div class="ngancach"></div>
 
         <div class="section2">
-          <button class="topic">CUSTOM FEEDS<img src="/Body Img/image-removebg-preview (16).png" alt=""></button>
-          <div class="costum-feed"><img src="/Body Img/image-removebg-preview (28).png" alt="">Create a custom feed</div>
+          <button class="topic">
+            CUSTOM FEEDS<img
+              src="/Body Img/image-removebg-preview (16).png"
+              alt=""
+            />
+          </button>
+          <div class="costum-feed">
+            <img
+              src="/Body Img/image-removebg-preview (28).png"
+              alt=""
+            />Create a custom feed
+          </div>
         </div>
 
         <div class="ngancach"></div>
 
         <div class="section3">
-          <button class="topic">COMMUNITIES<img src="/Body Img/image-removebg-preview (16).png" alt=""></button>
-          <div class="costum-feed"><img src="/Body Img/image-removebg-preview (28).png" alt="">Create a community</div>
+          <button class="topic">
+            COMMUNITIES<img
+              src="/Body Img/image-removebg-preview (16).png"
+              alt=""
+            />
+          </button>
+          <div class="costum-feed">
+            <img
+              src="/Body Img/image-removebg-preview (28).png"
+              alt=""
+            />Create a community
+          </div>
           <div class="communities">
-            <div class="announcement"><div class="hihi"><img src="/Body Img/free-reddit-logo-icon-2436-thumb.png" alt=""><span class="wtf">r/announcements</span></div>
+            <div class="announcement">
+              <div class="hihi">
+                <img
+                  src="/Body Img/free-reddit-logo-icon-2436-thumb.png"
+                  alt=""
+                /><span class="wtf">r/announcements</span>
+              </div>
               <form class="rating">
                 <label>
                   <input type="radio" name="stars" value="1" />
@@ -98,55 +182,144 @@
                 </label>
               </form>
             </div>
-            <div class="announcement"><div class="hihi"><img src="https://styles.redditmedia.com/t5_2qhrg/styles/communityIcon_d1cso044dj861.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=0f3e15044c4a1d684f1c70cbda7ad3e551c81773" alt=""><span class="wtf">r/taiwan</span></div> <form class="rating">
-              <label>
-                <input type="radio" name="stars" value="1" />
-                <span class="fa fa-star icon"></span>
-              </label>
-            </form></div>
-            <div class="announcement"><div class="hihi"><img src="/Body Img/image-removebg-preview (19).png" alt=""><span class="wtf">r/vietnam</span></div> <form class="rating">
-              <label>
-                <input type="radio" name="stars" value="1" />
-                <span class="fa fa-star icon"></span>
-              </label>
-            </form></div>
+            <div class="announcement">
+              <div class="hihi">
+                <img
+                  src="https://styles.redditmedia.com/t5_2qhrg/styles/communityIcon_d1cso044dj861.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=0f3e15044c4a1d684f1c70cbda7ad3e551c81773"
+                  alt=""
+                /><span class="wtf">r/taiwan</span>
+              </div>
+              <form class="rating">
+                <label>
+                  <input type="radio" name="stars" value="1" />
+                  <span class="fa fa-star icon"></span>
+                </label>
+              </form>
+            </div>
+            <div class="announcement">
+              <div class="hihi">
+                <img
+                  src="/Body Img/image-removebg-preview (19).png"
+                  alt=""
+                /><span class="wtf">r/vietnam</span>
+              </div>
+              <form class="rating">
+                <label>
+                  <input type="radio" name="stars" value="1" />
+                  <span class="fa fa-star icon"></span>
+                </label>
+              </form>
+            </div>
           </div>
         </div>
 
         <div class="ngancach"></div>
         <div class="section4">
-          <button class="topic">Resources<img src="/Body Img/image-removebg-preview (16).png" alt=""></button>
+          <button class="topic">
+            Resources<img
+              src="/Body Img/image-removebg-preview (16).png"
+              alt=""
+            />
+          </button>
           <div class="in4">
-            <div class="wth"><img src="/Body Img/image-removebg-preview (29).png" alt=""><span>About Reddit</span></div>
-            <div class="wth"><img src="/Body Img/image-removebg-preview (32).png" alt=""><span>Advertise</span></div>
-            <div class="wth"><img src="/Body Img/image-removebg-preview (23).png" alt=""><span>Help</span></div>
-            <div class="wth"><img src="/Body Img/image-removebg-preview (24).png" alt=""><span>Blog</span></div>
-            <div class="wth"><img src="/Body Img/image-removebg-preview (30).png" alt=""><span>Career</span></div>
-            <div class="wth"><img src="/Body Img/image-removebg-preview (33).png" alt=""><span>Press</span></div>
+            <div class="wth">
+              <img
+                src="/Body Img/image-removebg-preview (50).png"
+                alt=""
+              /><span>About Reddit</span>
+            </div>
+            <div class="wth">
+              <img
+                src="/Body Img/image-removebg-preview (51).png"
+                alt=""
+              /><span>Advertise</span>
+            </div>
+            <div class="wth">
+              <img
+                src="/Body Img/image-removebg-preview (52).png"
+                alt=""
+              /><span>Help</span>
+            </div>
+            <div class="wth">
+              <img
+                src="/Body Img/image-removebg-preview (53).png"
+                alt=""
+              /><span>Blog</span>
+            </div>
+            <div class="wth">
+              <img
+                src="/Body Img/image-removebg-preview (54).png"
+                alt=""
+              /><span>Career</span>
+            </div>
+            <div class="wth">
+              <img
+                src="/Body Img/image-removebg-preview (55).png"
+                alt=""
+              /><span>Press</span>
+            </div>
           </div>
         </div>
       </div>
-
-      </div>
+    </div>
 
 
       <!-- Post -->
   <div class="create-post-container">
     <p class="hetcuu">Create post</p>
       <div class="">
-      <form action="  ">
+      <form action="  " class="finale">
           <div class="form-group mb-3">
-            <input type="text" class="form-control" name="title" id="title" placeholder="Title" />
+            <label for="title" class="ggmrbeast">Title</label>
+            <input type="text" class="form-control" name="title" id="title" placeholder="Type Your Title..." />
           </div>
           <div class="form-group mb-3">
-            <label for="content">Nội dung</label>
-            <input type="text" name="content" placeholder="Nhập nội dung của bạn" class="form-control" id="content" />
+            <label for="content" class="ggmrbeast">Content</label>
+            <input type="text" name="content" placeholder="Type Your Content..." class="form-control" id="content" />
           </div>
           <div class="form-group mb-3">
-            <label for="image">Hình ảnh</label>
-            <input type="text" name="image" placeholder="Nhập URL hình ảnh" class="form-control" id="image" />
+            <label for="image" class="ggmrbeast">Image</label>
+            <input type="text" name="image" placeholder="Paste Your Image..." class="form-control" id="image" />
           </div>
-        <button type="submit" class="btn btn-primary">Đăng bài</button>
+
+          <button class="cta" type="submit">
+            <span class="span">NEXT</span>
+            <span class="second">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                viewBox="0 0 66 43"
+                height="20px"
+                width="50px"
+              >
+                <g
+                  fill-rule="evenodd"
+                  fill="none"
+                  stroke-width="1"
+                  stroke="none"
+                  id="arrow"
+                >
+                  <path
+                    fill="#FFFFFF"
+                    d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                    class="one"
+                  ></path>
+                  <path
+                    fill="#FFFFFF"
+                    d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                    class="two"
+                  ></path>
+                  <path
+                    fill="#FFFFFF"
+                    d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                    class="three"
+                  ></path>
+                </g>
+              </svg>
+            </span>
+          </button>
+          
       </form>
     </div>
   </div>
@@ -158,7 +331,7 @@
     <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
     <script defer src="/JS/conflict.js"></script>
     <script src="/JS/post.js"></script>
-
+    <script src="/JS/checklogin.js"></script>
     <script src="/JS/script.js"></script>
     <script src="/JS/search.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

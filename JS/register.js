@@ -34,27 +34,29 @@ document.addEventListener("submit", function (e) {
       // Thêm người dùng mới vào danh sách users
       users[username] = {
         email: email,
-        password: password
+        password: password,
       };
 
       // Lưu lại danh sách người dùng đã cập nhật vào local storage
       localStorage.setItem("users", JSON.stringify(users));
 
       // Đăng ký người dùng bằng Firebase Authentication
-      firebase.auth().createUserWithEmailAndPassword(email, password)
-      .then((userCredential) => {
-        console.log(userCredential);
-        Swal.fire({
-          position: "top-end",
-          icon: "success",
-          title: "Your work has been saved",
-          showConfirmButton: false,
-          timer: 1500,
-        }).then(() => {
-          // Sau khi hiển thị Swal thành công và đóng, chuyển hướng người dùng đến trang đăng nhập
-          window.location.href = "/HTML/login.html"; // Thay đổi URL tới trang đăng nhập của bạn
-        });
-      })
+      firebase
+        .auth()
+        .createUserWithEmailAndPassword(email, password)
+        .then((userCredential) => {
+          console.log(userCredential);
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Your work has been saved",
+            showConfirmButton: false,
+            timer: 1500,
+          }).then(() => {
+            // Sau khi hiển thị Swal thành công và đóng, chuyển hướng người dùng đến trang đăng nhập
+            window.location.href = "/HTML/login.html"; // Thay đổi URL tới trang đăng nhập của bạn
+          });
+        })
         .catch((error) => {
           console.error("Error creating user:", error);
           Swal.fire({

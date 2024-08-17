@@ -1,3 +1,3 @@
 function toggleStarFill(star) {
-  star.classList.toggle('active');
+  star.classList.toggle("active");
 }

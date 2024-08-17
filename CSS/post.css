@@ -9,13 +9,136 @@
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
 }
-#title {
-  width: 720px;
-  height: 60px;
-  border-radius: 20px;
-  margin-top: 20px;
-  border: 0.4px solid rgba(255, 255, 255, 0.2);
+
+.form-group {
+  height: 100px;
+  width: 200px;
 }
-#title input::placeholder {
-  margin-left: 20px;
+#title {
+  height: 50px;
+  width: 300px;
+}
+.finale {
+  margin-top: 50px;
+  margin-left: 100px;
+  height: 500px;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#content {
+  height: 50px;
+  width: 300px;
+}
+#image {
+  height: 50px;
+  width: 300px;
+}
+.ggmrbeast {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+  font-size: 20px;
+  color: #f9dabacf;
+  font-weight: bold;
+}
+.form-control {
+  margin-top: 20px;
+  border: none;
+  border-radius: 20px;
+  color: black;
+}
+.form-control:focus {
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+.form-control::placeholder {
+  padding-left: 10px;
+}
+
+/* From Uiverse.io by mobinkakei */
+.cta {
+  display: flex;
+  padding: 11px 33px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: white;
+  background: #6225e6;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  margin-left: 40px;
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #fbc638;
+}
+
+.cta .second {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover .second {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+.span {
+  transform: skewX(15deg);
+}
+
+.second {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover .three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover .one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover .two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: #fbc638;
+  }
+
+  100% {
+    fill: white;
+  }
 }

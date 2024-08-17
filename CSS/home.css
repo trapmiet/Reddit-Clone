@@ -74,7 +74,6 @@ header {
 }
 .thuaroi {
   text-decoration: none;
-
 }
 .thuaroi p {
   font-size: 18px;
@@ -89,7 +88,7 @@ header {
   height: 40px;
   border-radius: 20px;
   border: grey 0.5px solid;
-  background-color: var(--background-color); 
+  background-color: var(--background-color);
 }
 .input::placeholder {
   padding-left: 60px;
@@ -110,8 +109,6 @@ header {
   margin-bottom: 0;
 }
 .wassup:hover {
-  border-radius: 20px;
-  border: grey 0.5px solid;
   cursor: pointer;
 }
 .scroll-container {
@@ -182,7 +179,7 @@ header {
   border: none;
   justify-content: space-between;
   letter-spacing: 1px;
-  background-color: var(--background-color); 
+  background-color: var(--background-color);
 }
 .topic img {
   height: 30px;
@@ -201,7 +198,11 @@ header {
   justify-content: space-around;
   width: 190px;
   margin-top: 20px;
+  height: 20px;
 }
+/* .costum-feed :hover{
+  border: #748791 1px solid;
+} */
 .costum-feed img {
   height: 20px;
   width: 20px;
@@ -363,10 +364,75 @@ header {
 }
 
 .containerabc {
-  
-  margin-left: 350px;
+  margin-left: 500px;
   margin-top: 100px;
+}
+/* From Uiverse.io by vinodjangid07 */
+.bookmarkBtn {
+  width: 200px;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
 
+.IconContainer {
+  width: 30px;
+  height: 30px;
+  background: #8ba2ad;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: 0.3s;
+}
+.IconContainer img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.icon {
+  border-radius: 1px;
+}
+
+.text {
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8ba2ad;
+  z-index: 1;
+  transition-duration: 0.3s;
+  font-size: 15px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.bookmarkBtn:hover .IconContainer {
+  width: 130px;
+  transition-duration: 0.3s;
+}
+
+.bookmarkBtn:hover .text {
+  transform: translate(10px);
+  width: 0;
+  font-size: 0;
+  transition-duration: 0.3s;
+}
+
+.bookmarkBtn:active {
+  transform: scale(0.95);
+  transition-duration: 0.3s;
 }
 
 .time {
@@ -392,7 +458,7 @@ header {
   max-width: 600px;
   max-height: 600px;
 }
-.hinhanh{
+.hinhanh {
   max-width: 800px;
   max-height: 600px;
   width: 100%;
@@ -446,7 +512,7 @@ header {
   width: 200px;
   height: 40px;
   justify-content: space-between;
-  margin-top:   15px;
+  margin-top: 15px;
 }
 .ez {
   transform: rotate(180deg);
@@ -491,7 +557,7 @@ header {
   cursor: auto;
   margin-left: 18px;
 }
-.huhu {
+.huhuhu {
   display: flex;
 
   width: 80px;
@@ -512,6 +578,50 @@ header {
   background-color: transparent;
 }
 
-.dropdown-item{
+.dropdown-item {
   background-color: wwhite;
+}
+/* From Uiverse.io by mi-series */
+.btn123 {
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #40b3a2;
+  min-width: 100px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  height: 20px;
+  width: 30px;
+}
+
+.btn123:hover {
+  opacity: 0.95;
+}
+
+.btn123 .animation {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1),
+      0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1),
+      0 0 0 30px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1),
+      0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 30px rgba(255, 255, 255, 0.1),
+      0 0 0 40px rgba(255, 255, 255, 0);
+  }
 }

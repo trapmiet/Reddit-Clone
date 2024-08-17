@@ -14,11 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var logout = document.querySelector(".logout");
   logout?.addEventListener("click", function () {
-    firebase.auth().signOut().then(() => {
-      // Sign-out successful.
-    }).catch((error) => {
-      // An error happened.
-      console.error(error);
-    });
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        // Sign-out successful.
+      })
+      .catch((error) => {
+        // An error happened.
+        console.error(error);
+      });
   });
 });

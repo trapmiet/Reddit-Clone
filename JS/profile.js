@@ -10,9 +10,9 @@ firebase.auth().onAuthStateChanged((user) => {
     nameProfile.innerHTML = user.displayName;
     email.innerHTML = user.email;
     // avatar.src = user.photoURL;
-    timing.innerHTML =
-
-      new Date(user.metadata.creationTime).toLocaleDateString("vi-VN");
+    timing.innerHTML = new Date(user.metadata.creationTime).toLocaleDateString(
+      "vi-VN"
+    );
 
     nameProfile.value = user.displayName;
     email.value = user.email;
